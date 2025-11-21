@@ -2,34 +2,40 @@
 
 An AI-powered application that reads PDF documents and generates accurate, context-aware answers to user questions. This tool simplifies information retrieval from large documents using modern NLP models.
 
-## 📌 Features
+# PDF Chatbot (Streamlit + LangChain)
 
-Extracts text from PDF files using PyPDF2 or pdfplumber
+A simple Streamlit app that lets you chat with one or more uploaded PDF documents.  
+It uses LangChain to load PDFs, split them into chunks, embed them, store them in FAISS, and run a conversational retrieval chain with OpenAI.
 
-Processes user queries with advanced NLP models
+## Features
+- Upload multiple PDF files
+- Chunking of text for better retrieval
+- FAISS vector store for fast semantic search
+- Conversational retrieval with chat history
+- Streamlit UI for easy usage
 
-Provides accurate answers based on document context
+## Technologies
+- Python
+- Streamlit
+- LangChain
+- FAISS
+- OpenAI (via `OpenAIEmbeddings` and `ChatOpenAI`)
 
-Lightweight and easy to run (app.py only)
-
-## 🛠️ Technologies Used
-
-Python
-
-PyPDF2 / pdfplumber
-
-Hugging Face Transformers
-
-BERT / GPT-based models
-
-## 📂 Project Structure
+## Files
 .
-├── app.py     # Main application file
+├── app.py
 └── README.md
 
-## 🚀 Getting Started
-1. Install Dependencies
-pip install PyPDF2 pdfplumber transformers torch
+## Setup
 
-2. Run the App
-python app.py
+1. Create a Python environment and install dependencies:
+```bash
+python -m venv venv
+source venv/bin/activate   # macOS / Linux
+venv\Scripts\activate      # Windows
+
+pip install -r requirements.txt
+export OPENAI_API_KEY="your_openai_api_key_here"   # macOS / Linux
+setx OPENAI_API_KEY "your_openai_api_key_here"     # Windows (or use env vars in your runner)
+streamlit run app.py
+
