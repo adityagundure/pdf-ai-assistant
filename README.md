@@ -23,7 +23,7 @@ It uses LangChain to load PDFs, split them into chunks, embed them, store them i
 
 ## Files
 .
-├── app.py
+├── app.py     # Main application file
 └── README.md
 
 ## Setup
