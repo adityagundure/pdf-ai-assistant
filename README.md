@@ -2,7 +2,7 @@
 
 An AI-powered application that reads PDF documents and generates accurate, context-aware answers to user questions. This tool simplifies information retrieval from large documents using modern NLP models.
 
-📌 Features
+## 📌 Features
 
 Extracts text from PDF files using PyPDF2 or pdfplumber
 
@@ -12,7 +12,7 @@ Provides accurate answers based on document context
 
 Lightweight and easy to run (app.py only)
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 Python
 
@@ -22,12 +22,12 @@ Hugging Face Transformers
 
 BERT / GPT-based models
 
-📂 Project Structure
+## 📂 Project Structure
 .
 ├── app.py     # Main application file
 └── README.md
 
-🚀 Getting Started
+## 🚀 Getting Started
 1. Install Dependencies
 pip install PyPDF2 pdfplumber transformers torch
 
